@@ -22,7 +22,7 @@ export const Posts = () => {
 	return (
 		<div>
 			{posts.map((post) => (
-				<Post title={post.title} image={post.imageUrl} description={post.summary} />
+				<Post key={post.id} title={post.title} image={post.imageUrl} description={post.summary} />
 			))}
 		</div>
 	);
